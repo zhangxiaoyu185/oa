@@ -1,0 +1,14 @@
+<%for(var i=0;i<list.length; i++){%>
+	<li>
+		<div class="projectList_div">
+			<div class="projectList_div_top">
+				<div class="projectList_flag"><%=list[i].crproName%></div>
+				<div class="projectList_toDes ui_btn"  data-uuid="<%=list[i].crproUuid%>" data-action="to_projectDetails">详情</div>
+			</div>
+			<div class="projectList_div_bottom">
+				<span class="limit_name">资金金额：</span>
+				<span class="limit_value">￥<%=list[i].crproMoney%>元</span>
+			</div>
+		</div>
+	</li>
+<%}%>

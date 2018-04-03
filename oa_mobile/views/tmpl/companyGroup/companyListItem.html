@@ -1,0 +1,14 @@
+<%for(var i=0;i<list.length; i++){%>
+	<li>
+		<div class="companyList_div">
+			<div class="companyList_div_top">
+				<div class="company_flag"><%=list[i].crgroName%></div>
+				<div class="company_toDes ui_btn"  data-uuid="<%=list[i].crgroUuid%>" data-action="to_companyDetails">详情</div>
+			</div>
+			<div class="companyList_div_bottom">
+				<span class="limit_name">资金金额：</span>
+				<span class="limit_value">￥<%=list[i].crgroMoney%>元</span>
+			</div>
+		</div>
+	</li>
+<%}%>

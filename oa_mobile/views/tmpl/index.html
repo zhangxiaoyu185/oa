@@ -1,0 +1,112 @@
+<%
+	var jurisdiction_title = "";
+	switch (data.crusrJob){
+		case 1:
+	    	jurisdiction_title="超级管理员";
+	    	break;
+	  	case 2:
+	    	jurisdiction_title="集团管理员";
+	    	break;
+	    case 3:
+	    	jurisdiction_title="投资客";
+	    	break;
+	  	case 4:
+	    	jurisdiction_title="渠道";
+	    	break;
+	    case 5:
+	    	jurisdiction_title="策划";
+	    	break;
+	  	case 6:
+	    	jurisdiction_title="营销总监";
+	    	break;
+	    case 7:
+	    	jurisdiction_title="项目总监";
+	    	break;
+	  	case 8:
+	    	jurisdiction_title="财务";
+	    	break;
+	}
+%>
+
+<div class="top_border">
+	<img id="top_bg" class="top_bg" src="images/index/top_bg.png">
+	<div class="top_content">
+		<div class="jurisdiction_title"><%=jurisdiction_title%></div>
+		<div id="headImg" class="head_test"></div>
+		<div class="infoItem"><%=data.crusrName?data.crusrName:'姓名'%></div>
+		<div class="infoItem"><%=data.crusrMobile?data.crusrMobile:'手机号'%></div>
+	</div>
+</div>
+
+<div class="content">
+	<%if(data.crusrJob==1 || data.crusrJob==2 || data.crusrJob==3 || data.crusrJob==4 || data.crusrJob==5 || data.crusrJob==6 || data.crusrJob==7 || data.crusrJob==8){%>
+		<div class="content_item ui_btn" data-action="to_my_information">
+			<div class="img_item my_information">我的信息</div>
+		</div>
+	<%}%>
+	<%if(data.crusrJob==1 || data.crusrJob==4 || data.crusrJob==5 || data.crusrJob==6 || data.crusrJob==7 || data.crusrJob==8){%>
+		<div class="content_item ui_btn" data-action="to_pending_trial">
+			<!-- <div class="new_flag"></div> -->
+			<div class="img_item pending_trial">待审</div>
+		</div>
+	<%}%>
+	<%if(data.crusrJob==1 || data.crusrJob==2 || data.crusrJob==4 || data.crusrJob==5 || data.crusrJob==6 || data.crusrJob==7 || data.crusrJob==8){%>
+		<div class="content_item ui_btn" data-action="to_technological_process">
+			<div class="img_item technological_process">流程</div>
+		</div>
+	<%}%>
+	<%if(data.crusrJob==1 || data.crusrJob==2){%>
+		<div class="content_item ui_btn" data-action="to_company_group">
+			<div class="img_item company_group">集团</div>
+		</div>
+	<%}%>
+	<%if(data.crusrJob==1 || data.crusrJob==2 || data.crusrJob==4 || data.crusrJob==5 || data.crusrJob==6 || data.crusrJob==7 || data.crusrJob==8){%>
+		<div class="content_item ui_btn" data-action="to_project">
+			<div class="img_item project">项目</div>
+		</div>
+	<%}%>
+	<%if(data.crusrJob==1 || data.crusrJob==2){%>
+		<div class="content_item ui_btn" data-action="to_capital_pool">
+			<div class="img_item capital_pool">资金池</div>
+		</div>
+	<%}%>
+	<%if(data.crusrJob!=1){%>
+		<div class="content_item ui_btn" data-action="to_capital_investor">
+			<div class="img_item treasure">财富</div>
+		</div>
+	<%}%>
+	<%if(data.crusrJob==1){%>
+		<div class="content_item ui_btn" data-action="to_person_search">
+			<div class="img_item personSerarch">人员搜索</div>
+		</div>
+	<%}%>
+	<%if(data.crusrJob==1){%>
+		<div class="content_item ui_btn" data-action="to_investors">
+			<div class="img_item investors">投资客</div>
+		</div>
+	<%}%>
+	<%if(data.crusrJob==8){%>
+		<div class="content_item ui_btn" data-action="to_appropriation">
+			<div class="img_item appropriation">申请拨款</div>
+		</div>
+	<%}%>
+	<%if(data.crusrJob==4 || data.crusrJob==5){%>
+		<div class="content_item ui_btn" data-action="to_applyFor">
+			<div class="img_item applyFor">申请资金</div>
+		</div>
+	<%}%>
+	
+	<%if(data.crusrJob==1 || data.crusrJob==2 || data.crusrJob==3 || data.crusrJob==4 || data.crusrJob==5 || data.crusrJob==6 || data.crusrJob==7 || data.crusrJob==8){%>
+		<div class="content_item ui_btn" data-action="to_mchange_password">
+			<div class="img_item change_password">修改密码</div>
+		</div>
+	<%}%>
+
+	<div class="content_item ui_btn" data-action="to_exit">
+		<div class="img_item exit">退出登录</div>
+	</div>
+
+</div>
+
+	
+

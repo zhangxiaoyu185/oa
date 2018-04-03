@@ -1,0 +1,53 @@
+.img_logo {
+	width: 116px;
+	height: 100px;
+	background: url("../images/login/logo.png") no-repeat;
+	position: relative;
+	margin: 60px auto 20px auto;
+	-webkit-background-size: 116px 100px;
+	background-size: 116px 100px;
+}
+
+.login_input_item {
+	width: 92%;
+	height: 42px;
+	margin: 10px 7px;
+	padding: 0px 5px;
+	border: solid 0px #d5d4d4;
+	border-bottom: solid 1px #d5d4d4;
+	font-size: 18px;
+}
+
+.login_btn {
+	width: 90%;
+	height: 36px;
+	margin: 60px auto 30px auto;
+	background: #1e77f6;
+	border-radius: 5px;
+	text-align: center;
+	line-height: 36px;
+	color: #fff;
+	font-size: 20px;
+}
+
+.remember_checked {
+	width: 100px;
+	height: 17px;
+	background: url("../images/login/remember_checked.png") no-repeat;
+	padding-left: 20px;
+	-webkit-background-size: 15px 17px;
+	background-size: 15px 17px;
+	background-position: 0px 1px;
+	float: right;
+}
+
+.remember_nocheck {
+	width: 100px;
+	height: 17px;
+	background: url("../images/login/remember_nocheck.png") no-repeat;
+	padding-left: 20px;
+	-webkit-background-size: 15px 17px;
+	background-size: 15px 17px;
+	background-position: 0px 1px;
+	float: right;
+}

@@ -1,0 +1,56 @@
+<%for(var i=0; i<list.length; i++){%>
+	<li>
+		<div class="pendingTrial_top">
+			<div class="pendingTrial_flag">借款流程</div>
+		</div>
+
+		<div class="pendingTrial_big_border">
+			<div class="pendingTrial_title">
+				<%=list[i].crflwName%>
+				<%if(list[i].relate){%>
+					<span class="investorProcessList_graySpan">已添加</span>
+				<%}else{%>
+					<span class="investorProcessList_blueSpan ui_btn" data-action="addProcess" data-crsptFlow="<%=list[i].crflwCode%>" data-crsptCompany="<%=list[i].crflwCompany%>" data-crsptProject="<%=list[i].crflwProject%>">添加</span>
+				<%}%>
+			</div>
+			<div class="pendingTrial_desc">
+				<span style="color:#a4a4a4">所属项目：</span><span style="color:#333"><%=list[i].crflwProjectName%></span><br/>
+				<span style="color:#a4a4a4">当前环节：</span><span style="color:#333">拨款发起</span><br/>
+				<span style="color:#a4a4a4">拨款金额：</span><span  style="color:#111">￥<%=list[i].crflwLoanMoney%>元</span><br/>
+				<span style="color:#a4a4a4">更新时间：</span><span style="color:#a4a4a4"><%=list[i].crflwUdate%></span>
+			</div>
+
+			<div class="pendingTrial_toDesc ui_btn" data-code="<%=list[i].crflwCode%>" data-action="toPendingTrialDesc">
+				查看详情
+				<div class="comm_next" style="height: 35px;line-height: 35px; color: #f38701;">></div>
+			</div>
+		</div>
+	</li>
+<%}%>
+
+<!-- 	* @param crsptUser 投资客
+	* @param crsptFlow 拨款流程流程编码
+	* @param crsptCompany 拨款所属集团
+	* @param crsptProject 拨款所属项目 -->
+
+<!-- crflwApplyUser:"UHHHHH"
+crflwByType:3
+crflwCdate:"2016-10-30"
+crflwCode:"1030175815671RPt"
+crflwCompany:"CAAAAA"
+crflwDesc:"热热热热热热热热热热热"
+crflwLoanMoney:123
+crflwName:"借款1"
+crflwProject:"PAAAAA"
+crflwProjectName:"北宸之光"
+crflwRemarks:"地煞符"
+crflwStatus:1
+crflwStep:12
+crflwType:"FUNDING"
+crflwUdate:"2016-10-30"
+crflwUpdateJob:8
+crflwUpdateUser:"UHHHHH"
+crflwUptype:1
+crflwUuid:"1030175815671hLF"
+crflwVersion:2
+relate:false -->

@@ -1,0 +1,276 @@
+/***********************创建投资客*******************************/
+.createInvestor_border {
+	width: 100%;
+	overflow: auto;
+	border-top: solid 1px #e3e3e3;
+	border-bottom: solid 1px #e3e3e3; 
+	margin-top: 9px;
+	background: #fff;
+}
+
+.createInvestor_border .item {
+	width: 96%;
+	height: 43px;
+	line-height: 43px;
+	font-size: 16px;
+	float: right;
+	border-bottom: solid 1px #e3e3e3; 
+}
+
+.createInvestor_border .item input {
+	width: 72%;
+	height: 41px;
+	float: right;
+	margin-right: 5px;
+	border: 0px;
+	padding-left: 5px;
+	width: 68%;
+	font-size: 16px;
+}
+
+.createInvestor_border .item:last-child  {
+	border: 0px;
+}
+
+.createInvestor_triangle_topleft {
+    width: 0;
+	height: 0;
+	border-top: 10px solid #ef603b;
+	border-right: 10px solid transparent;
+	position: absolute;
+}
+
+/************************投资拨款流程列表*******************************/
+.investorProcessList_delete {
+	width: 17px;
+	height: 25px;
+	background: url("../images/investor/investor_delete.png") no-repeat;
+	-webkit-background-size: 17px 25px;
+	background-size: 17px 25px;
+	float: right;
+	margin-top: 11px;
+}
+
+.investorProcessList_search {
+	width: 23px;
+	height: 20px;
+	background: url("../images/investor/investor_search.png") no-repeat;
+	-webkit-background-size: 23px 20px;
+	background-size: 23px 20px;
+	float: right;
+	margin-top: -32px;
+	margin-right: 12px;
+	z-index: 1000;
+	position: relative;
+}
+
+.investorProcessList_blueSpan {
+	float: right;
+	color: #0f85fa;
+}
+
+.investorProcessList_graySpan {
+	float: right;
+	color: #b0b0b0;
+}
+
+.investorProcessList_search_bg {
+	background-color: #fff;
+	width: 100%;
+	overflow: auto;
+	position: relative;
+	z-index: 999;
+}
+
+.investorProcessList_search_input {
+	width: 96%;
+	height: 28px;
+	line-height: 28px;
+	border: 0;
+	text-align: center;
+	background-color: #e0e0e0;
+	font-size: 14px;
+	margin: 6px auto;
+	margin-left: 2%;
+}
+
+/************************投资客列表*******************************/
+.investorList_div {
+	position: relative;
+	width: 100%;
+	overflow: auto;
+	background: #fff;
+	border-top: solid 1px #d7d8d8;
+	border-bottom: solid 1px #d7d8d8;
+	margin-top: 10px;  
+}
+
+.investorList_div_top {
+	position: relative;
+	width: 100%;
+	height: 39px;
+}
+
+.investorList_div_top .investorList_flag {
+	width: 200px;
+	height: 20px;
+	background: url("../images/investor/investor_flag.png") no-repeat;
+	-webkit-background-size: 31px 33px;
+	background-size: 31px 33px;
+	margin-top: 3px;
+	padding-left: 37px;
+	padding-top: 12px;
+	vertical-align: bottom;
+	margin-top: 9px;
+	margin-left: 13px;
+	float: left;
+}
+
+.investorList_div_top .investorList_toDes {
+	width: 40px;
+	height: 21px;
+	border: solid 1px #0f85fa;
+	line-height: 21px;
+	text-align: center;
+	color: #0f85fa;
+	font-size: 12px;
+	border-radius: 3px;
+	position: absolute;
+	bottom: 0px;
+	right: 15px;
+}
+
+.investorList_div_bottom {
+	width: 88%;
+	height: 50px;
+	padding: 9px 0px;
+	clear: both;
+	font-size: 14px;
+	border-top: solid 1px #e3e3e3;
+	line-height: 25px;
+	float: right;
+	margin-right: 2%;
+	margin-top: 19px;
+}
+
+.investorList_div_bottom .name {
+	color: #cacaca;
+}
+
+.investorList_div_bottom .value {
+	color: #8c8c8c;
+}
+
+/************************投资客详情*******************************/
+.investorDesc_bottom_flag {
+	position: absolute;
+	width: 4px;
+	background-color: #fd8e0b;
+	height: 41px;
+}
+
+/***********************投资客资金池*******************************/
+
+.capitalInvestor_title {
+	color: #5c666c;
+    font-size: 17px;
+    height: 34px;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 25px;
+    
+    /*background-position: 74% 0px;
+    padding-top: 23px;*/
+}
+
+.invest_flag {
+	width: 56px;
+    height: 32px;
+    background: url(../images/investor/invest_flag.png) no-repeat;
+    -webkit-background-size: 56px 32px;
+    background-size: 56px 32px;
+    margin-left: 37px;
+    left: 50%;
+    position: absolute;
+    margin-top: -56px;
+}
+
+.invest_value {
+	width: 100%;
+	height: 40px;
+	line-height: 40px;
+	text-align: center;
+	color: #ffbd18;
+	font-size: 35px;
+	font-weight: bold;
+}
+
+.total_assets {
+	text-align: center;
+    color: #979797;
+    font-size: 15px;
+        margin-top: 28px;
+}
+
+.capitalInvestor_item {
+	width: 92%;
+    height: 70px;
+    margin: 10px auto;
+}
+
+.capitalInvestor_item .left_div {
+	width: 70%;
+	height: 70px;
+	float: left;
+}
+
+.capitalInvestor_item .name {
+	width: 100%;
+	height: 35px;
+	line-height: 35px;
+	font-size: 16px;
+}
+
+.capitalInvestor_item .desc {
+	width: 100%;
+	height: 35px;
+	line-height: 35px;
+	font-size: 13px;
+	color: #b5b5b5;
+}
+
+.capitalInvestor_item .right_div {
+	width: 30%;
+	height: 70px;
+	color: #f27a56;
+	line-height: 70px;
+	font-size: 13px;
+	text-align: right;
+	float: left;
+}  
+
+
+.capitalInvestor_item .name.copper_flag {
+	background: url(../images/investor/copper_flag.png) no-repeat;
+    -webkit-background-size: 25px 25px;
+    background-size: 25px 25px;
+    background-position: 0px 4px;
+    padding-left: 30px;
+}
+
+.capitalInvestor_item .name.silver_flag {
+	background: url(../images/investor/silver_flag.png) no-repeat;
+    -webkit-background-size: 25px 25px;
+    background-size: 25px 25px;
+    background-position: 0px 4px;
+    padding-left: 30px;
+}
+
+
+.capitalInvestor_item .name.gold_flag {
+	background: url(../images/investor/gold_flag.png) no-repeat;
+    -webkit-background-size: 25px 25px;
+    background-size: 25px 25px;
+    background-position: 0px 4px;
+    padding-left: 30px;
+}

@@ -1,0 +1,25 @@
+<div class="comm_title">图片附件</div>
+<div class="comm_goBack ui_btn" data-action="goBack"></div>
+<%if(picAttachment_stepName=='发起' && processType!=='process'){%>
+<div class="comm_title_right ui_btn" data-action="upImg">上传图片</div>
+<%}%>
+
+<div id="displayImg">
+<%for(var i=0; i<list.length; i++){
+	var path = WEB_URL + "coreAttachment/image/get/" + list[i].cratmUuid;
+%>
+	<div class="upImg_item" style="margin-top: 15px;">
+		<img class="upImg_preview btn" src="<%=path%>"/>
+		<div class="upImg_name"><%=list[i].cratmFileName%></div>
+		<%if(picAttachment_stepName=='发起' && processType!=='process'){%>
+			<div class="upImg_top_bar">
+	          <div class="upImg_file_delete ui_btn" data-action="deletePic" data-uuid="<%=list[i].cratmUuid%>"></div>
+	        </div>
+        <%}%>
+	</div>
+<%}%>
+</div>
+
+
+
+

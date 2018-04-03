@@ -1,0 +1,76 @@
+<%for(var i=0; i<list.length; i++){
+	var headPath = "";
+	if(list[i].crflwUpdateUserHead) {
+		headPath = WEB_URL + "coreAttachment/image/get/" + list[i].crflwUpdateUserHead;
+	}else{
+		headPath = "images/comm/head.png"
+	}
+
+	var crflwStepName = "";
+	switch(list[i].crflwStep) {
+		case 1: crflwStepName = "渠道发起"; break;
+		case 2: crflwStepName = "策划发起"; break;
+		case 3: crflwStepName = "策划审核"; break;
+		case 4: crflwStepName = "营销总审核"; break;
+		case 5: crflwStepName = "项目总审核"; break;
+		case 6: crflwStepName = "财务审核"; break;
+		case 7: crflwStepName = "已完成"; break;
+		case 11: crflwStepName = "拨款发起"; break;
+		case 12: crflwStepName = "拨款审核"; break;
+		case 13: crflwStepName = "已拨款"; break;
+		case 14: crflwStepName = "已还款"; break;
+	}
+
+	var crflwUptypeClass = "";
+	switch(list[i].crflwUptype) {
+		case 1: crflwUptypeClass = "initiate_flag"; break;
+		case 2: crflwUptypeClass = "apply_pass_flag"; break;
+		case 3: crflwUptypeClass = "sendBack_flag"; break;
+		case 4: crflwUptypeClass = "cancel_flag"; break;
+		case 5: crflwUptypeClass = "apply_finish_flag"; break;
+	
+		case 11: crflwUptypeClass = "initiate_flag"; break;
+		case 12: crflwUptypeClass = "give_fund_flag"; break;
+		case 13: crflwUptypeClass = "sendBack_flag"; break;
+		case 14: crflwUptypeClass = "cancel_flag"; break;
+		case 15: crflwUptypeClass = "give_refund_flag"; break;
+	}
+%>
+<!-- 1已发起2已通过3已退回4已取消5已完成;拨款更新类型:11已发起12已拨款13已退回14已取消15已还款 -->
+	<li>
+		<!-- <div class="processDir_head"></div> WEB_URL-->
+		<img src=<%=headPath%> class="processDir_head"/>
+		<div class="processDir_border">
+			<div class="item top">
+				<span><%=list[i].crflwUpdateUserName%></span>
+				<span class="time"><%=list[i].crflwUdate%></span>
+			</div>
+			<%if(list[i].crflwRemarks){%>
+				<div class="item middle">
+					<%=list[i].crflwRemarks%>
+				</div>
+			<%}%>
+			<div class="item bottom">
+				<span style="color:#888">流程环节：</span>
+				<span><%=crflwStepName%></span>
+			</div>
+			<div class="processDir_imgFlag <%=crflwUptypeClass%>"></div>
+		</div>
+	</li>
+<%}%>
+
+<!-- // crflwCode:"1025221129694LSk"
+// crflwRemarks:"dahui  bukaixin"
+// crflwStep:4
+// crflwUdate:"2016-10-28"
+// crflwUpdateJob:6
+// crflwUpdateUser:"UFFFFF"
+// crflwUpdateUserHead:"1028144129447djk"
+// crflwUpdateUserName:"market"
+// crflwUptype:3
+// crflwVersion:2 -->
+
+<!-- 	/**
+	*申请资金更新类型:
+	*/
+	private Integer crflwUptype; -->

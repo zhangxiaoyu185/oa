@@ -1,0 +1,173 @@
+/************************个人信息*******************************/
+.div-personInfo-top {
+	width: 100%;
+	/*height: 222px;*/
+	overflow: auto;
+	border-bottom: solid 1px #e2e1e1;
+	margin-top: 1px;
+	background: #fff;
+}
+
+.div-head {
+	width: 95%;
+	float: right;
+	height: 55px;
+	line-height: 55px;
+	font-size: 16px;
+	border-bottom: solid 1px #e2e1e1;
+}
+
+.img-head-picture {
+	width: 46px;
+	height: 46px;
+	background: url("../images/person/img-head-picture.png") no-repeat;
+	-webkit-background-size: 46px 46px;
+	background-size: 46px 46px;
+	float: right;
+	margin-top: 5px;
+	margin-right: 6px;
+	border-radius: 23px;
+}
+
+.div-item {
+	width: 95%;
+	float: right;
+	height: 41px;
+	line-height: 41px;
+	border-bottom: solid 1px #e2e1e1;
+}
+
+.div-item.noBottom {
+	border-bottom: 0px;
+}
+
+
+.item-content-right {
+	color: #a7a7a7;
+	float: right;
+	margin-right: 12px;
+}
+
+.item-content-right.omit {
+	width: 60%;
+    text-align: right;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+    
+
+.div-personInfo-bottom {
+	width: 100%;
+	/*height: 82px;*/
+	overflow: auto;
+	border-top: solid 1px #e2e1e1;
+	border-bottom: solid 1px #e2e1e1;
+	margin-top: 21px;
+	background: #fff;
+}
+
+.person-text {
+	width: 72%;
+	height: 41px;
+	float: right;
+	margin-right: 5px;
+	border: 0px;
+	background-color:rgba(255,255,255,0);
+}
+
+/************************修改性别*******************************/
+.div-sex-border-top {
+	width: 100%;
+	height: 92px;
+	border-radius: 5px;
+	background: #fff; 
+}
+
+.div-item-sex {
+	width: 100%;
+	height: 46px;
+	color: #00a0e3;
+	text-align: center;
+	line-height: 46px;
+}
+
+.div-top-border {
+	border-top: solid 1px #cbc6c6;
+}
+
+.sex-opacity {
+  	width: 100%;
+  	height: 8px;    
+}
+
+.div-sex-border-down {
+	width: 100%;
+	height: 46px;
+	border-radius: 5px;
+	background: #fff; 
+}
+
+/************************修改密码*******************************/
+.changePas_boder {
+	width: 100%;
+	overflow: auto;
+	border-bottom: solid 1px #e3e1e1;
+	border-top: solid 1px #e3e1e1;
+	margin-top: 15px;
+	background: #fff;
+}
+
+.changePas_boder .item {
+	width: 95%;
+	height: 45px;
+	line-height: 45px;
+	color: #111;
+	font-size: 15px;
+	float: right;
+}
+
+.changePas_boder .item.border_bottom {
+	border-bottom: solid 1px #e3e1e1;
+}
+
+.changePas_boder .item .input {
+	height: 37px;
+	width: 78%;
+	margin-left: 2%;
+	border: 0px;
+}
+
+.changePas_sure_btn {
+	width: 95%;
+	height: 38px;
+	line-height: 38px;
+	text-align: center;
+	font-size: 18px;
+	background: #ff9933;
+	color: #fff;
+	margin: 25px auto;
+	border-radius: 5px;
+}
+
+/************************搜索人员*******************************/
+.personSearch_bg {
+	width: 100%;
+	height: 43px;
+	background: #fff;
+}
+.personSearch_item {
+	width: 95%;
+	height: 42px;
+	line-height: 42px;
+	font-size: 16px;
+	border-bottom: solid 1px #e3e3e3;
+	float: right;
+}
+
+.personSearch_next {
+	float: right;
+	color: #b3b3b3;
+	margin-right: 10px;
+	font-size: 18px;
+}

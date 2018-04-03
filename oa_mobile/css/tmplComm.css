@@ -1,0 +1,156 @@
+/************************流程走向*******************************/
+.processDir_head {
+	width: 46px;
+	height: 46px;
+	-webkit-background-size: 46px 46px;
+	background-size: 46px 46px;
+	margin: 12px auto 0px auto;
+	position: relative;
+	z-index: 999;
+	display: block;
+	border-radius: 23px;
+}
+
+.processDir_border {
+	width: 96%;
+	overflow: auto;
+	margin: -20px auto 0px auto;
+	border: solid 1px #e2e1e1;
+	border-radius: 8px;
+	background: #fff;
+	position: relative;
+}
+
+.processDir_border .item {
+	width: 92%;
+	margin: 0px auto;
+}
+
+.processDir_border .item.top {
+	height: 39px;
+	line-height: 39px;
+	font-size: 16px;
+	border-bottom: solid 1px #e2e1e1;
+}
+
+.processDir_border .item.top .time {
+	font-size: 12px;
+	color: #a1a1a1;
+	float: right;
+}
+
+.processDir_border .item.middle {
+	padding: 10px 0px;
+	line-height: 21px;
+	font-size: 14px;
+	color: #a8a8a8;
+}
+
+.processDir_border .item.bottom {
+	height: 39px;
+	line-height: 39px;
+	font-size: 16px;
+	border-top: solid 1px #e2e1e1;
+}
+
+.processDir_imgFlag {
+	width: 78px;
+	height: 69px;
+	position: absolute;
+	bottom: 5px;
+	right: 0px;
+}
+
+.processDir_imgFlag.initiate_flag {/*已发起*/
+	background: url("../images/comm/initiate_flag.png") no-repeat;
+	-webkit-background-size: 78px 69px;
+	background-size: 78px 69px;
+}
+
+.processDir_imgFlag.apply_pass_flag {/*已通过*/
+	background: url("../images/comm/apply_pass_flag.png") no-repeat;
+	-webkit-background-size: 78px 69px;
+	background-size: 78px 69px;
+}
+
+.processDir_imgFlag.sendBack_flag {/*已退回*/
+	background: url("../images/comm/sendBack_flag.png") no-repeat;
+	-webkit-background-size: 78px 69px;
+	background-size: 78px 69px;
+}
+
+.processDir_imgFlag.cancel_flag {/*已取消*/
+	background: url("../images/comm/cancel_flag.png") no-repeat;
+	-webkit-background-size: 78px 69px;
+	background-size: 78px 69px;
+}
+
+.processDir_imgFlag.apply_finish_flag {/*已完成*/
+	background: url("../images/comm/apply_finish_flag.png") no-repeat;
+	-webkit-background-size: 78px 69px;
+	background-size: 78px 69px;
+}
+
+.processDir_imgFlag.give_fund_flag {/*已拨款*/
+	background: url("../images/comm/give_fund_flag.png") no-repeat;
+	-webkit-background-size: 78px 69px;
+	background-size: 78px 69px;
+}
+
+.processDir_imgFlag.give_refund_flag {/*已还款*/
+	background: url("../images/comm/give_refund_flag.png") no-repeat;
+	-webkit-background-size: 78px 69px;
+	background-size: 78px 69px;
+}
+
+/************************电子发票*******************************/
+.electronic_invoice_item {
+	width: 96%;
+	overflow: auto;
+	background: #fff;
+	border-radius: 5px;
+	margin: 6px auto 0px auto;
+	border: solid 1px #e8e8e8; 
+}
+
+.electronic_invoice_item .title {
+	width: 100%;
+	height: 45px;
+	line-height: 45px;
+	font-size: 17px;
+	font-weight: bold;
+	text-align: center;
+	color: #fff;
+}
+
+.electronic_invoice_item .title.first {
+	background: #32cf9b;
+}
+
+.electronic_invoice_item .title.second {
+	background: #f0c12f;
+}
+
+.electronic_invoice_item .title.third {
+	background: #5fbefd;
+}
+
+.electronic_invoice_item .input_content {
+	width: 94%;
+	height: 43px;
+	line-height: 43px;
+	font-size: 15px;
+	color: #666;
+	border-bottom: solid 1px #e3e3e3;
+	float: right;
+}
+
+.electronic_invoice_item .input_content .input {
+	width: 70%;
+	height: 41px;
+	line-height: 41px;
+	font-size: 15px;
+	border: 0px; 
+	font-size: 15px;
+	float: right;
+}

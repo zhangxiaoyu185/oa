@@ -1,0 +1,64 @@
+<div class="comm_title">电子发票</div>
+<div class="comm_goBack ui_btn" data-action="goBack"></div>
+<%if(job==8 && processType=="pending"){%>
+<div class="comm_title_right ui_btn" data-action="to_updateInvoice" >确定</div>
+<%}%>
+
+
+<%if(job==8 && processType=="pending"){%>
+<div class="electronic_invoice_item">
+	<div class="title first">收款信息</div>
+	<div class="input_content">
+		<span>收款单位</span>
+		<input id="creicPayee" class="input" type="text" placeholder="请输入收款单位"/>
+	</div>
+	<div class="input_content">
+		<span>收款账号</span>
+		<input id="creicPayeeAccount" class="input" type="text" placeholder="请输入收款账号"/>
+	</div>
+	<div class="input_content">
+		<span>收款开户行</span>
+		<input id="creicPayeeBank" class="input" type="text" placeholder="请输入开户行"/>
+	</div>
+</div>
+
+<div class="electronic_invoice_item">
+	<div class="title second">付款信息</div>
+	<div class="input_content">
+		<span>付款单位</span>
+		<input id="creicPayer" class="input" type="text" placeholder="请输入付款单位"/>
+	</div>
+	<div class="input_content">
+		<span>付款账号</span>
+		<input id="creicPayerAccount" class="input" type="text" placeholder="请输入付款账号"/>
+	</div>
+	<div class="input_content">
+		<span>付款开户行</span>
+		<input id="creicPayerBank" class="input" type="text" placeholder="请输入付款开户行"/>
+	</div>
+</div>
+
+<div class="electronic_invoice_item">
+	<div class="title third">基本信息</div>
+	<div class="input_content">
+		<span>发票类型</span>
+		<select id="select" class="input">
+			
+		</select>
+	</div>
+	<div class="input_content">
+		<span>小写金额</span>
+		<input id="creicLowAmount" class="input" type="text" placeholder="请输入小写金额"/>
+	</div>
+	<div class="input_content">
+		<span>开票人</span>
+		<input id="creicDrawer" class="input" type="text" placeholder="请输入开票人"/>
+	</div>
+	<div class="input_content">
+		<span>备注</span>
+		<input id="creicRemarks" class="input" type="text" placeholder="请备注"/>
+	</div>
+</div>
+<%}%>
+
+<img src="<%=imgSrc%>" style="width:100%"/>

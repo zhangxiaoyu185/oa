@@ -1,0 +1,70 @@
+<div class="comm_title">创建集团管理员</div>
+<div class="comm_goBack ui_btn" data-action="goBack"></div>
+
+<div class="createAdministrator_border">
+	<div class="item">
+		<span>登录账号</span>
+		<input id="crusrName" type="text" placeholder="请输入登录账号"/>
+	</div>
+	<div class="item">
+		<span>用户姓名</span>
+		<input id="crusrCode" type="text" placeholder="请输入姓名"/>
+	</div>
+	<div class="item ui_btn" data-action="changeSexLayer">
+		<span>用户性别</span>
+		<span class="item-content-right"></span>
+		<span class="item-content-right" id="crusrGender">请选择</span>
+	</div>
+	<!-- <div class="item">
+		<span>出生年月</span>
+		<input id="birth" placeholder="请输入出生年月" style="text-align: right; padding-right: 15px;" />
+	</div> -->
+</div>
+
+<div class="createAdministrator_border">
+	<div class="item">
+		<span>用户密码</span>
+		<input id="crusrPassword" type="password" placeholder="请输入密码"/>
+	</div>
+	<div class="item">
+		<span>确认密码</span>
+		<input id="confirmPwd" type="password" placeholder="请确认密码"/>
+	</div>
+</div>
+
+<div class="createAdministrator_border">
+	<div class="item">
+		<span>联系方式</span>
+		<input id="crusrMobile" type="tel" placeholder="请输入联系方式"/>
+	</div>
+</div>
+
+<!-- <div class="createAdministrator_border">
+	<div class="item">
+		<span>用户地址</span>
+		<input id="crusrAddress" type="tel" placeholder="请输入地址"/>
+	</div>
+</div> -->
+
+<%if(job==1){%>
+	<div class="createInvestor_border">
+		<div class="item">
+			<span>铜宝宝</span>
+			<input id="crusrCopper" type="number" placeholder="请输入铜宝宝金额"/>
+		</div>
+		<div class="item">
+			<span>银宝宝</span>
+			<input id="crusrSilver" type="number" placeholder="请输入银宝宝余额"/>
+		</div>
+		<div class="item">
+			<span>金宝宝</span>
+			<input id="crusrGold" type="number" placeholder="请输入借出金宝宝金额"/>
+		</div>
+		<div class="item">
+			<span>昨日收益</span>
+			<input id="crusrYestIncome" type="number" placeholder="请输入昨日收益"/>
+		</div>
+	</div>
+<%}%>
+
+<div class="create_sure_btn ui_btn" data-action="saveUsers">创建</div>

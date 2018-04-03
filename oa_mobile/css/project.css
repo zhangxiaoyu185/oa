@@ -1,0 +1,187 @@
+/***********************添加项目*******************************/
+.createProject_div_item {
+	width: 100%;
+	height: 43px;
+	font-size: 16px;
+	background: #fff;
+	border-top: solid 1px #e8e8e8;
+	border-bottom: solid 1px #e8e8e8;
+	margin-top: 10px;
+}
+
+.createProject_name {
+	width: 80px;
+	height: 43px;
+	line-height: 43px;
+	font-size: 16px;
+	text-align: right;
+	float: left;
+}
+
+.createProject_input {
+	width: 70%;
+	height: 41px;
+	font-size: 15px;
+	float: right;
+	border: 0px;
+
+}
+
+.createProject_div_textarea {
+	width: 100%;
+	height: 123px;
+	font-size: 16px;
+	background: #fff;
+	border-top: solid 1px #e8e8e8;
+	border-bottom: solid 1px #e8e8e8;
+	margin-top: 10px;
+}
+
+.createProject_textarea {
+	width: 70%;
+	height: 96px;
+	font-size: 15px;
+	float: right;
+	border: 0px;
+	padding: 12px 0px;
+}
+
+.createProject_sure_btn {
+	width: 95%;
+	height: 38px;
+	line-height: 38px;
+	font-size: 17px;
+	text-align: center;
+	color: #fff;
+	font-weight: bold;
+	background: #ff9933;
+	border-radius: 3px;
+	margin: 46px auto 20px auto;
+}
+
+.createProject_select {
+	height: 44px;
+	border: 0px;
+	width: 68%;
+	text-align: right;
+	float: right;
+} 
+
+/************************项目列表*******************************/
+
+.projectList_div {
+	position: relative;
+	width: 100%;
+	height: 84px;
+	background: #fff;
+	border-top: solid 1px #d7d8d8;
+	border-bottom: solid 1px #d7d8d8;
+	margin-top: 10px;  
+}
+
+.projectList_div_top {
+	position: relative;
+	width: 100%;
+	height: 39px;
+}
+
+.projectList_div_top .projectList_flag {
+	width: 200px;
+	height: 20px;
+	background: url("../images/project/project_flag.png") no-repeat;
+	-webkit-background-size: 31px 33px;
+	background-size: 31px 33px;
+	margin-top: 3px;
+	padding-left: 37px;
+	padding-top: 12px;
+	vertical-align: bottom;
+	margin-top: 9px;
+	margin-left: 13px;
+	float: left;
+}
+
+.projectList_div_top .projectList_toDes {
+	width: 40px;
+	height: 21px;
+	border: solid 1px #0f85fa;
+	line-height: 21px;
+	text-align: center;
+	color: #0f85fa;
+	font-size: 12px;
+	border-radius: 3px;
+	position: absolute;
+	bottom: 0px;
+	right: 15px;
+}
+
+.projectList_div_bottom {
+	width: 100%;
+	height: 12px;
+	clear: both;
+	font-size: 13px;
+	margin-top: 15px;
+}
+
+.projectList_div_bottom .limit_name {
+	color: #bbb;
+	margin-left: 47px;
+}
+
+.projectList_div_bottom .limit_value {
+	color: #bbb;
+}
+
+/************************项目详情*******************************/
+.projectDetails_big_bg {
+	width: 100%;
+	overflow: auto;
+	background: #fff;
+	border-top: solid 1px #e2e1e1;
+	border-bottom: solid 1px #e2e1e1;
+	margin-top: 8px;
+}
+
+.projectDetails_big_bg .firstItem {
+	width: 100%;
+	height: 57px;
+	border-bottom: solid 1px #e2e1e1;
+}
+
+.projectDetails_big_bg .firstItem .projectDetails_flag {
+	width: 27px;
+	height: 27px;
+	background: url("../images/project/projectDetails_flag.png") no-repeat;
+	-webkit-background-size: 27px 27px;
+	background-size: 27px 27px;
+	margin-left: 5%;
+	float: left;
+	margin-top: 13px;
+}
+
+.projectDetails_big_bg .firstItem .company_name {
+	font-size: 17px;
+	font-weight: bold;
+	line-height: 57px;
+	float: left;
+	margin-left: 14px;
+}
+
+.projectDetails_big_bg .middleItem {
+	width: 95%;
+	height: 40px;
+	line-height: 40px;
+	color: #111;
+	font-weight: 15px;
+	float: right;
+	border-bottom: solid 1px #e2e1e1;
+}
+
+.projectDetails_big_bg .lastItem {
+	clear: both;
+	width: 90%;
+	padding: 5%;
+	font-size: 12px;
+	color: #666;
+	text-indent:2em;
+	line-height: 20px;
+}

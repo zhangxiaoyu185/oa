@@ -1,0 +1,253 @@
+/***********************创建集团*******************************/
+.createCompany_div_item {
+	width: 100%;
+	height: 43px;
+	font-size: 16px;
+	background: #fff;
+	border-top: solid 1px #e8e8e8;
+	border-bottom: solid 1px #e8e8e8;
+	margin-top: 10px;
+}
+
+.createCompany_name {
+	width: 80px;
+	height: 43px;
+	line-height: 43px;
+	font-size: 16px;
+	text-align: right;
+	float: left;
+}
+
+.createCompany_input {
+	width: 70%;
+	height: 41px;
+	font-size: 15px;
+	float: right;
+	border: 0px;
+
+}
+
+.createCompany_div_textarea {
+	width: 100%;
+	height: 123px;
+	font-size: 16px;
+	background: #fff;
+	border-top: solid 1px #e8e8e8;
+	border-bottom: solid 1px #e8e8e8;
+	margin-top: 10px;
+}
+
+.createCompany_textarea {
+	width: 70%;
+	height: 96px;
+	font-size: 15px;
+	float: right;
+	border: 0px;
+	padding: 12px 0px;
+}
+
+.createCompany_sure_btn {
+	width: 95%;
+	height: 38px;
+	line-height: 38px;
+	font-size: 17px;
+	text-align: center;
+	color: #fff;
+	font-weight: bold;
+	background: #ff9933;
+	border-radius: 3px;
+	margin: 46px auto 20px auto;
+}
+
+/************************集团列表*******************************/
+
+.companyList_div {
+	position: relative;
+	width: 100%;
+	height: 84px;
+	background: #fff;
+	border-top: solid 1px #d7d8d8;
+	border-bottom: solid 1px #d7d8d8;
+	margin-top: 10px;  
+}
+
+.companyList_div_top {
+	position: relative;
+	width: 100%;
+	height: 39px;
+}
+
+.companyList_div_top .company_flag {
+	width: 200px;
+	height: 20px;
+	background: url("../images/companyGroup/company_flag.png") no-repeat;
+	-webkit-background-size: 31px 33px;
+	background-size: 31px 33px;
+	margin-top: 3px;
+	padding-left: 37px;
+	padding-top: 12px;
+	vertical-align: bottom;
+	margin-top: 9px;
+	margin-left: 13px;
+	float: left;
+}
+
+.companyList_div_top .company_toDes {
+	width: 40px;
+	height: 21px;
+	border: solid 1px #0f85fa;
+	line-height: 21px;
+	text-align: center;
+	color: #0f85fa;
+	font-size: 12px;
+	border-radius: 3px;
+	position: absolute;
+	bottom: 0px;
+	right: 15px;
+}
+
+.companyList_div_bottom {
+	width: 100%;
+	height: 12px;
+	clear: both;
+	font-size: 13px;
+	margin-top: 15px;
+}
+
+.companyList_div_bottom .limit_name {
+	color: #bbb;
+	margin-left: 47px;
+}
+
+.companyList_div_bottom .limit_value {
+	color: #bbb;
+}
+
+/************************集团详情*******************************/
+.companyDetails_big_bg {
+	width: 100%;
+	overflow: auto;
+	background: #fff;
+	border-top: solid 1px #e2e1e1;
+	border-bottom: solid 1px #e2e1e1;
+	margin-top: 8px;
+}
+
+.companyDetails_big_bg .firstItem {
+	width: 100%;
+	height: 57px;
+	border-bottom: solid 1px #e2e1e1;
+}
+
+.companyDetails_big_bg .firstItem .companyDetails_flag {
+	width: 27px;
+	height: 27px;
+	background: url("../images/companyGroup/companyDetails_flag.png") no-repeat;
+	-webkit-background-size: 27px 27px;
+	background-size: 27px 27px;
+	margin-left: 5%;
+	float: left;
+	margin-top: 13px;
+}
+
+.companyDetails_big_bg .firstItem .company_name {
+	font-size: 17px;
+	font-weight: bold;
+	line-height: 57px;
+	float: left;
+	margin-left: 14px;
+}
+
+.companyDetails_big_bg .middleItem {
+	width: 95%;
+	height: 40px;
+	line-height: 40px;
+	color: #111;
+	font-weight: 15px;
+	float: right;
+	border-bottom: solid 1px #e2e1e1;
+}
+
+.companyDetails_big_bg .lastItem {
+	clear: both;
+	width: 90%;
+	padding: 5%;
+	font-size: 12px;
+	color: #666;
+	text-indent:2em;
+	line-height: 20px;
+}
+
+/************************管理员列表*******************************/
+.administrator_img_flag {
+	width: 100%;
+	height: 84px;
+	background: url("../images/companyGroup/administrator_flag.png") no-repeat;
+	-webkit-background-size: 100% 84px;
+	background-size: 100% 84px;
+}
+
+.administrator_ul {	
+	
+}
+
+.administrator_ul li {
+	overflow: auto;
+	background: #fff;
+}
+
+.administrator_ul li:first-child {
+	border-top: solid 1px #e3e3e3;
+}
+
+.administrator_ul li:last-child {
+	border-bottom: solid 1px #e3e3e3;
+}
+
+.administrator_ul .item {
+	width: 95%;
+	height: 43px;
+	line-height: 43px;
+	font-size: 16px;
+	border-bottom: solid 1px #e3e3e3;
+	float: right;
+}
+
+.administrator_ul li:last-child .item {
+	border: 0px;
+}
+
+/************************创建管理员*******************************/
+.createAdministrator_border {
+	width: 100%;
+	overflow: auto;
+	border-top: solid 1px #e3e3e3;
+	border-bottom: solid 1px #e3e3e3; 
+	margin-top: 9px;
+	background: #fff;
+}
+
+.createAdministrator_border .item {
+	width: 96%;
+	height: 43px;
+	line-height: 43px;
+	font-size: 16px;
+	float: right;
+	border-bottom: solid 1px #e3e3e3; 
+}
+
+.createAdministrator_border .item input {
+	width: 72%;
+	height: 41px;
+	float: right;
+	margin-right: 5px;
+	border: 0px;
+	padding-left: 5px;
+	width: 68%;
+	font-size: 16px;
+}
+
+.createAdministrator_border .item:last-child  {
+	border: 0px;
+}
+

@@ -1,0 +1,152 @@
+<%
+var crflwTypeName = "";
+if(data.crflwType=="APPLY"){
+	crflwTypeName = "申请资金";
+}else{
+	crflwTypeName = "拨款";
+}
+
+var crflwStepName = ""; 
+	switch(data.crflwStep){
+	case 1: crflwStepName="渠道发起"; break;
+	case 2: crflwStepName="策划发起"; break;
+	case 3: crflwStepName="策划审核"; break;
+	case 4: crflwStepName="营销审核"; break;
+	case 5: crflwStepName="项目审核"; break;
+	case 6: crflwStepName="财务审核"; break;
+	case 7: crflwStepName="已完成"; break;
+
+	case 11: crflwStepName="拨款发起"; break;
+	case 12: crflwStepName="拨款审核"; break;
+	case 13: crflwStepName="已拨款"; break;
+	case 14: crflwStepName="已还款"; break;
+}
+
+%>
+
+<div class="comm_title"><%=crflwTypeName%>流程详情</div>
+<div class="comm_goBack ui_btn" data-action="goBack"></div>
+
+<div class="pendingTrialDesc_top">
+	<div class="pendingTrialDesc_title">
+		<div class="flag"><%=crflwStepName%></div>
+		<span id="crflwName" style="margin-left: 5px;"><%=crflwName%></span>
+		<%if(stepName=="发起" && processType !== "process"){%>
+			<div class="pendingTrialDesc_change ui_btn" style="margin-top: 16px; margin-left: 6px;" data-action="changeTitle"></div>
+		<%}%>	
+		
+	</div>
+
+	<div class="pendingTrialDesc_desc">
+		<%if(stepName=="发起" && processType !== "process"){%>
+			<div class="pendingTrialDesc_change ui_btn" data-action="changeDesc"></div>
+		<%}%>
+		<div id="crflwDesc" class="contetn"><%=crflwDesc%></div>
+		<%if(data.crflwLoanMoney){%>
+			<div class="money">
+				<span>拨款金额：</span>
+				<span>￥<%=data.crflwLoanMoney%>元</span>
+			</div>
+		<%}%>
+	</div>
+
+	<div class="pendingTrialDesc_attribute">
+		<div class="left">
+			<span>所属项目：</span>
+			<span><%=data.crflwProjectName%></span>
+		</div>
+		<div class="right">
+			<span>发起时间：</span>
+			<span><%=data.crflwCdate%></span>
+		</div>
+
+		<div class="left">
+			<span>所属集团：</span>
+			<span><%=data.crflwCompanyName%></span>
+		</div>
+		<div class="right">
+			<span>更新时间：</span>
+			<span><%=data.crflwUdate%></span>
+		</div>
+	</div>
+</div>
+
+<div class="pendingTrialDesc_middle">
+	<div class="item border_bottom ui_btn" data-action="to_picAttachment">
+		<div class="img pendingTrial_attachments">图片附件</div>
+		<div class="comm_next" style="height: 42px;line-height: 42px;">></div>			
+	</div>
+
+	<div class="item ui_btn" data-action="to_processDirList">
+		<div class="img pendingTrial_process">流程走向</div>
+		<div class="comm_next" style="height: 42px;line-height: 42px;">></div>			
+	</div>
+</div>
+
+<div class="pendingTrialDesc_middle">
+	<%if(data.crflwType=="APPLY"){%>
+		<div class="item ui_btn" data-action="to_electronicInvoice">
+			<div class="img pendingTrial_credentials">电子发票</div>
+			<div class="comm_next" style="height: 42px;line-height: 42px;">></div>			
+		</div>
+	<%}else{%>
+		<div class="item ui_btn" data-action="to_certificate">
+			<div class="img pendingTrial_credentials">拨款凭证</div>
+			<div class="comm_next" style="height: 42px;line-height: 42px;">></div>			
+		</div>
+	<%}%>
+
+
+	
+</div>
+
+<%if(processType !== "process" && processType !== "investor"){%>
+
+	<div class="pendingTrialDesc_bottom comm_bottom_btn_placeholder">
+		<div class="name">备注信息</div>
+		<textarea id="crflwRemarks" class="content" placeholder="请输入您的留言"></textarea>
+	</div>
+
+	<%if(stepName=="发起"){%>
+		<div class="pendingTrialDesc_bottom_btn">
+			<div class="item">
+				<div class="pendingTrial_return ui_btn" data-action="delete">撤回</div>
+			</div>
+			<div class="item">
+				<div class="pendingTrial_sure ui_btn" data-action="start">发起</div>
+			</div>
+		</div>
+	<%}%>
+	<%if(stepName=="经过"){%>
+		<div class="pendingTrialDesc_bottom_btn">
+			<div class="item">
+				<div class="pendingTrial_return ui_btn" data-action="sendBack">打回</div>
+			</div>
+			<div class="item">
+				<div class="pendingTrial_sure ui_btn" data-action="pass">通过</div>
+			</div>
+		</div>
+	<%}%>
+	<%if(stepName=="完成"){%>
+		<div class="pendingTrialDesc_bottom_btn">
+			<div class="item">
+				<div class="pendingTrial_return ui_btn" data-action="sendBack">打回</div>
+			</div>
+			<div class="item">
+				<div class="pendingTrial_reimbursement ui_btn" data-action="sureRefund">确认通过</div>
+			</div>
+		</div>
+	<%}%>
+
+	<%if(stepName=="拨款完成"){%>
+		<div class="pendingTrialDesc_bottom_btn">
+			<div class="item">
+				<div class="pendingTrial_return ui_btn" data-action="goBack">返回</div>
+			</div>
+			<div class="item">
+				<div class="pendingTrial_reimbursement ui_btn" data-action="sureRefund">确认还款</div>
+			</div>
+		</div>
+	<%}%>
+
+<%}%>

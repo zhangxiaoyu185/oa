@@ -1,0 +1,56 @@
+<div class="comm_title">编辑项目详情</div>
+<div class="comm_goBack ui_btn" data-action="goBack"></div>
+
+<div class="projectDetails_big_bg">
+	<div class="firstItem ui_btn" data-action="changeName">
+		<div class="projectDetails_flag"></div>
+		<div class="company_name" id="crproName"><%=data.crproName%></div>
+		<div class="comm_next" style="height: 58px;line-height: 58px;">></div>
+	</div>
+	<div class="middleItem">
+		资金额度
+		<span class="span_blue" style="float: right; margin-right: 15px;">￥<%=data.crproMoney%></span>
+	</div>
+	<div class="middleItem">
+		所属集团
+		<span style="height: 41px;line-height: 41px;color: #b3b3b3;float: right;margin-right: 15px;"><%=data.crproCompanyName%></span>
+	</div>
+	<div class="middleItem ui_btn" data-action="changeDesc">
+		项目简介
+		<div class="comm_next" style="height: 41px;line-height: 41px;">></div>
+	</div>
+
+	<div class="lastItem" id="crproDesc">
+		<%=data.crproDesc%>
+	</div>
+</div>
+
+<div class="projectDetails_big_bg comm_bottom_btn_placeholder" style="margin-top: 15px;">
+	<div class="firstItem">
+		<div class="projectDetails_flag"></div>
+		<div class="company_name">项目人员</div>
+	</div>
+	<div class="middleItem ui_btn" data-job="4" data-action="to_workerListView">
+		渠道 
+		<div class="comm_next" style="height: 41px;line-height: 41px;">></div>
+	</div>
+	<div class="middleItem ui_btn" data-job="5" data-action="to_workerListView">
+		策划
+		<div class="comm_next" style="height: 41px;line-height: 41px;">></div>
+	</div>
+	<div class="middleItem ui_btn" data-job="8" data-action="to_workerListView">
+		财务
+		<div class="comm_next" style="height: 41px;line-height: 41px;">></div>
+	</div>
+	<div class="middleItem ui_btn" data-job="6" data-action="to_workerListView">
+		营销总
+		<div class="comm_next" style="height: 41px;line-height: 41px;">></div>
+	</div>
+	<div class="middleItem ui_btn" data-job="7" data-action="to_workerListView" style="border-bottom: 0px;height: 41px;">
+		项目总
+		<div class="comm_next" style="height: 41px;line-height: 41px;">></div>
+	</div>
+
+</div>
+
+<div class="comm_bottom_btn ui_btn" data-action="deleteProject">删除全部信息</div>

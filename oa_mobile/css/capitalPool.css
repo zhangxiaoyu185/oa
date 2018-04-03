@@ -1,0 +1,215 @@
+/************************资金池*******************************/
+.capitalPool_top_border {
+	position: relative;
+	width: 100%;
+	height: auto;
+}
+
+.capitalPool_top_bg {
+	width: 100%;
+}
+
+.capitalPool_top_content {
+	position: absolute;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	text-align: center;
+	color: #fff;
+}
+
+.capitalPool_top_content .title {
+	font-size: 19px;
+	margin-top: 9%;
+}
+
+.capitalPool_top_content .moneyLimit {
+	font-size: 39px;
+	font-weight: bolder;
+	margin-top: 6%;
+}
+
+.capitalPool_top_content .info {
+	font-size: 15px;
+	margin-top: 6%;
+}
+
+.capitalPool_top_content .changeMoneyLimit {
+	width: 123px;
+	height: 36px;
+	line-height: 36px;
+	color: #fff;
+	font-size: 16px;
+	border: solid 1px #fff;
+	border-radius: 18px;
+	margin: 6% auto 0px auto;
+}
+
+.capitalPool_middle {
+	width: 100%;
+	height: 90px;
+	background-color: #fff;
+}
+
+.capitalPool_middle .item {
+	width: 50%;
+	float: left;
+	height: 90px;
+}
+
+.capitalPool_middle .interval {
+	width: 1px;
+	height: 90px;
+	background-color: #D3D2D2;
+	position: absolute;
+	z-index: 0000;
+	margin-left: 50%;
+}
+
+.capitalPool_middle .item .img_flag {
+	width: 66px;
+	height: 54px;
+	margin: 18px auto;
+	line-height: 54px;
+	font-size: 16px;
+	padding-left: 61px;
+}
+
+.capitalPool_middle .item .img_flag.moneyRecharge {
+	background: url("../images/capitalPool/moneyRecharge.png") no-repeat;
+	-webkit-background-size: 56px 54px;
+	background-size: 56px 54px;
+}
+
+.capitalPool_middle .item .img_flag.moneyExtract {
+	background: url("../images/capitalPool/moneyExtract.png") no-repeat;
+	-webkit-background-size: 56px 54px;
+	background-size: 56px 54px;
+}
+
+.capitalPool_bottom_item {
+	width: 95%;
+	height: 43px;
+	line-height: 43px;
+	font-size: 13px;
+	border-bottom: solid 1px #D3D2D2;
+	float: right;
+}
+
+li:last-child .capitalPool_bottom_item{
+	border: 0px;
+}
+
+.capitalPool_bottom_item .img_flag {
+	height: 18px;
+	line-height: 20px;
+	font-size: 18px;
+	vertical-align: middle;
+	margin-top: 13px;
+	padding-left: 25px;
+	float: left;
+}
+
+.capitalPool_bottom_item .img_flag.listBlue_flag {
+	background: url("../images/capitalPool/listBlue_flag.png") no-repeat;
+	-webkit-background-size: 21px 18px;
+	background-size: 21px 18px;
+}
+
+.capitalPool_bottom_item .img_flag.listYellow_flag {
+	background: url("../images/capitalPool/listYellow_flag.png") no-repeat;
+	-webkit-background-size: 21px 18px;
+	background-size: 21px 18px;
+}
+
+.capitalPool_bottom_item .limitValue {
+	height: 43px;
+	line-height: 43px;
+	font-size: 13px;
+	color: #666;
+	float: right;
+	margin-right: 5px;
+	float: right;
+	width: 55%;
+	text-align: right;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+
+.capitalPool_bottom_item .next {
+	height: 43px;
+	line-height: 43px;
+	font-size: 13px;
+	color: #d0d0d0;
+	float: right;
+	margin-right: 10px;
+}
+
+
+/************************拨款*******************************/
+
+.capitalPool_bottom_border {
+	width: 100%;
+	overflow: auto;
+}
+
+.capitalPool_bottom_border .span_flag {
+	font-size: 16px;
+	line-height: 44px;
+}
+
+.capitalPool_div_textarea {
+	width: 100%;
+	height: 124px;
+	font-size: 15px;
+	float: right;
+	border: 0px;
+	padding: 12px 0px;
+	background-color: #fff;
+}
+
+.capitalPool_div_textarea .name {
+	width: 80px;
+	height: 43px;
+	line-height: 34px;
+	font-size: 16px;
+	text-align: right;
+	float: left;
+}
+
+.capitalPool_div_textarea .textarea {
+	width: 70%;
+	height: 96px;
+	font-size: 15px;
+	float: right;
+	border: 0px;
+	padding: 12px 0px;
+}
+
+.capitalPool_sure_btn {
+	clear: both;
+	width: 95%;
+	height: 38px;
+	line-height: 38px;
+	font-size: 17px;
+	text-align: center;
+	color: #fff;
+	font-weight: bold;
+	background: #ff9933;
+	border-radius: 3px;
+	margin: 60px auto 20px auto;
+}
+
+/************************申请资金*******************************/
+.capitalApplyFor_top_bg {
+	width: 100%
+}
+
+
+
+.halving_line {
+	width: 100%;
+	height: 4px;
+	background: #f2f2f5;
+}

@@ -1,0 +1,18 @@
+<%for(var i=0; i<list.length; i++){%>
+	<li>
+		<div class="investorList_div">
+			<div class="investorList_div_top" style="padding-bottom: 14px;">
+				<div class="investorList_flag"><%=list[i].crusrName%></div>
+				<div style="bottom: 13px;" class="investorList_toDes ui_btn" data-uuid="<%=list[i].crusrUuid%>" data-action="to_investorDesc">详情</div>
+			</div>
+
+			<!-- <div class="investorList_div_bottom">
+				<span class="name">资金金额：</span>
+				<span class="value">￥ <%=list[i].crusrMoney%>元</span>
+				<br/>
+				<span class="name">已借出：</span>
+				<span class="value">￥ <%=list[i].crusrLoan%>元</span>
+			</div> -->
+		</div>
+	</li>
+<%}%>

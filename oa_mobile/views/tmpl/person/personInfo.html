@@ -1,0 +1,62 @@
+<div class="comm_title">人员信息</div>
+<div class="comm_goBack ui_btn" data-action="goBack"></div>
+
+<div class="div-personInfo-top">
+	<div class="div-head" >
+		<span>头像</span>
+		<span class="item-content-right">></span>
+		<div id="img_head_pic" class="img-head-picture" >
+			<input type="file" id="uploadphoto" name="uploadfile" style="display: block;-moz-opacity:0.5;-khtml-opacity: 0.5;opacity: 0;" class="img-head-picture"/>
+		</div>
+	</div>
+
+	<div class="div-item">
+		<span style="float: left;">帐号</span>
+		<!-- <span class="item-content-right">></span> -->
+		<span class="item-content-right" style="color: #000;margin-right: 33px;"><%=data.crusrName%></span>
+	</div>
+
+	<div class="div-item ui_btn" data-action="changeName">
+		<span style="float: left;">昵称</span>
+		<span class="item-content-right">></span>
+		<span id="name" class="item-content-right omit"><%=data.crusrCode%></span>
+	</div>
+
+	<div class="div-item ui_btn" data-action="changeSexLayer">
+		<span style="float: left;">性别</span>
+		<span class="item-content-right">></span>
+		<span id="sexValue" class="item-content-right"><%=data.crusrGender==1?"男":"女"%></span>
+	</div>
+
+	<!-- <div class="div-item">
+		<span style="float: left;">出生年月</span>
+		<span class="item-content-right">></span>
+		<input id="birth" style="text-align:right; padding-right:6px; width:60%; color:#a7a7a7; float:right;" class="person-text" placeholder="请输入出生年月"  value="<%=data.crusrBirthday%>"/>
+	</div> -->
+
+	<div class="div-item noBottom ui_btn" data-action="changeNumber">
+		<span style="float: left;">手机号</span>
+		<span class="item-content-right">></span>
+		<span id="mobileNo" class="item-content-right omit"><%=data.crusrMobile%></span>
+	</div>
+</div>
+
+<!-- <div class="div-personInfo-bottom comm_bottom_btn_placeholder">
+	<div class="div-item ui_btn" data-action="changeEmail">
+		<span style="float: left;">邮箱</span>
+		<span class="item-content-right">></span>
+		<span id="email" class="item-content-right omit"><%=data.crusrEmail%></span>
+	</div>
+
+	<div class="div-item noBottom ui_btn" data-action="changeAddress">
+		<span style="float: left;">地址</span>
+		<span class="item-content-right">></span>
+		<span id="address" class="item-content-right omit"><%=data.crusrAddress%></span>
+	</div>
+</div>	 -->
+
+<!-- <div class="comm_bottom_btn">确定</div>	 -->
+
+<!-- <div class="comm_bottom_btn">删除全部信息</div>	 -->
+
+<!-- crusrAddress: "杭州西湖边"crusrCdate: "2016-10-23"crusrCode: "admin"crusrCompany: ""crusrEmail: "zy135185@163.com"crusrGender: 1crusrJob: 1crusrMobile: "15157135111"crusrMoney: 90000000crusrName: "admin"crusrPassword: "e10adc3949ba59abbe56e057f20f883e"crusrQq: "1556377990"crusrRemarks: "超级管理员"crusrStatus: 1crusrUdate: "2016-10-23"crusrUuid: "UAAAAA" -->

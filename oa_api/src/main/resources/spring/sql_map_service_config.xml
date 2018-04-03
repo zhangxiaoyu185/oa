@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE configuration PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-config.dtd">
+<configuration>
+	<settings>
+		<setting name="cacheEnabled" value="false" />
+		<setting name="localCacheScope" value="STATEMENT" />
+	</settings>
+
+	<typeAliases>
+		<typeAlias type="com.xiaoyu.lingdian.entity.CoreAttachment" alias="CoreAttachment" />
+		<typeAlias type="com.xiaoyu.lingdian.entity.CoreCapitalLog" alias="CoreCapitalLog" />
+		<typeAlias type="com.xiaoyu.lingdian.entity.CoreCompany" alias="CoreCompany" />
+		<typeAlias type="com.xiaoyu.lingdian.entity.CoreFlowLog" alias="CoreFlowLog" />
+		<typeAlias type="com.xiaoyu.lingdian.entity.CoreFlow" alias="CoreFlow" />
+		<typeAlias type="com.xiaoyu.lingdian.entity.CoreInvestment" alias="CoreInvestment" />
+		<typeAlias type="com.xiaoyu.lingdian.entity.CoreProject" alias="CoreProject" />
+		<typeAlias type="com.xiaoyu.lingdian.entity.CoreUser" alias="CoreUser" />
+		<typeAlias type="com.xiaoyu.lingdian.entity.CoreInvoice" alias="CoreInvoice" />
+		<typeAlias type="com.xiaoyu.lingdian.entity.CoreInvoiceType" alias="CoreInvoiceType" />
+	</typeAliases>
+
+	<plugins>
+		<plugin interceptor="com.xiaoyu.lingdian.core.mybatis.plugin.SelectCountSqlInterceptor" />
+		<plugin interceptor="com.xiaoyu.lingdian.core.mybatis.plugin.OffsetLimitInterceptor">
+			<property name="dialectClass" value="com.xiaoyu.lingdian.core.mybatis.dialect.MySQLDialect" />
+		</plugin>
+	</plugins>
+
+	<mappers>
+		<mapper resource="com/xiaoyu/lingdian/mapper/CoreAttachmentMapper.xml" />
+		<mapper resource="com/xiaoyu/lingdian/mapper/CoreCapitalLogMapper.xml" />
+		<mapper resource="com/xiaoyu/lingdian/mapper/CoreCompanyMapper.xml" />
+		<mapper resource="com/xiaoyu/lingdian/mapper/CoreFlowLogMapper.xml" />
+		<mapper resource="com/xiaoyu/lingdian/mapper/CoreFlowMapper.xml" />
+		<mapper resource="com/xiaoyu/lingdian/mapper/CoreInvestmentMapper.xml" />
+		<mapper resource="com/xiaoyu/lingdian/mapper/CoreProjectMapper.xml" />
+		<mapper resource="com/xiaoyu/lingdian/mapper/CoreUserMapper.xml" />
+		<mapper resource="com/xiaoyu/lingdian/mapper/CoreInvoiceMapper.xml" />
+		<mapper resource="com/xiaoyu/lingdian/mapper/CoreInvoiceTypeMapper.xml" />
+	</mappers>
+</configuration>

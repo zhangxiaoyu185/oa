@@ -1,0 +1,174 @@
+.top_border {
+	position: relative;
+	width: 100%;
+	height: auto;
+}
+
+.top_bg {
+	width: 100%;
+}
+
+.top_content {
+	position: absolute;
+	top: 0;
+	width: 100%;
+	height: 100%;
+}
+
+.top_content .jurisdiction_title {
+	text-align: center;
+	font-size: 20px;
+	color: #fff;
+	font-weight: bolder;
+	margin-top: 5%;
+}
+
+.top_content .head_test {
+	width: 114px;
+	height: 114px;
+	background: url("../images/index/head_test.png") no-repeat;
+	position: relative;
+	margin: 10px auto 0px auto;
+	-webkit-background-size: 114px 114px;
+	background-size:114px 114px;
+}
+
+.top_content .infoItem {
+	text-align: center;
+	font-size: 15px;
+    color: #fff;
+    margin-top: 4px;
+}
+
+.content {
+
+}
+
+.content .content_item {
+	width: 33%;
+	height: 100px;
+	background: #fff;
+	margin-bottom: 1px;
+	float: left;
+	position: relative;
+	margin-left: 0.25%;
+}
+
+/*.content .content_item.left {
+	margin-right: 0.5%;
+}
+
+.content .content_item.right {
+	margin-left: 0.5%;
+}*/
+
+.content .content_item .img_item {
+	width: 70px;
+	height: 46px;
+	text-align: center;
+	padding-top: 48px;
+	margin: 20px auto;
+}
+
+.content .content_item .img_item.my_information {
+	background: url("../images/index/my_information.png") no-repeat;
+	-webkit-background-size: 47px 46px;
+	background-size: 47px 46px;
+	background-position: 11px 0px;
+}
+
+.content .content_item .img_item.pending_trial {
+	background: url("../images/index/pending_trial.png") no-repeat;
+	-webkit-background-size: 47px 46px;
+	background-size: 47px 46px;
+	background-position: 11px 0px;
+}
+
+.content .content_item .img_item.technological_process {
+	background: url("../images/index/technological_process.png") no-repeat;
+	-webkit-background-size: 47px 46px;
+	background-size: 47px 46px;
+	background-position: 11px 0px;
+}
+
+.content .content_item .img_item.company_group {
+	background: url("../images/index/company_group.png") no-repeat;
+	-webkit-background-size: 47px 46px;
+	background-size: 47px 46px;
+	background-position: 11px 0px;
+}
+
+.content .content_item .img_item.project {
+	background: url("../images/index/project.png") no-repeat;
+	-webkit-background-size: 47px 46px;
+	background-size: 47px 46px;
+	background-position: 11px 0px;
+}
+
+.content .content_item .img_item.capital_pool {
+	background: url("../images/index/capital_pool.png") no-repeat;
+	-webkit-background-size: 47px 46px;
+	background-size: 47px 46px;
+	background-position: 11px 0px;
+}
+
+.content .content_item .img_item.investors {
+	background: url("../images/index/investors.png") no-repeat;
+	-webkit-background-size: 47px 46px;
+	background-size: 47px 46px;
+	background-position: 11px 0px;
+}
+
+.content .content_item .img_item.change_password {
+	background: url("../images/index/change_password.png") no-repeat;
+	-webkit-background-size: 47px 46px;
+	background-size: 47px 46px;
+	background-position: 11px 0px;
+}
+
+.content .content_item .img_item.applyFor {
+	background: url("../images/index/applyFor.png") no-repeat;
+	-webkit-background-size: 47px 46px;
+	background-size: 47px 46px;
+	background-position: 11px 0px;
+}
+
+.content .content_item .img_item.appropriation {
+	background: url("../images/index/appropriation.png") no-repeat;
+	-webkit-background-size: 47px 46px;
+	background-size: 47px 46px;
+	background-position: 11px 0px;
+}
+
+.content .content_item .img_item.treasure {
+	background: url("../images/index/treasure.png") no-repeat;
+	-webkit-background-size: 47px 46px;
+	background-size: 47px 46px;
+	background-position: 11px 0px;
+}
+
+.content .content_item .img_item.personSerarch {
+	background: url("../images/index/personSerarch.png") no-repeat;
+	-webkit-background-size: 47px 46px;
+	background-size: 47px 46px;
+	background-position: 11px 0px;
+}
+
+.content .content_item .img_item.exit {
+	background: url("../images/index/exit.png") no-repeat;
+	-webkit-background-size: 47px 46px;
+	background-size: 47px 46px;
+	background-position: 11px 0px;
+}
+
+
+.content .content_item .new_flag {
+	width: 40px;
+	height: 31px;
+	background: url("../images/index/new_flag.png") no-repeat;
+	-webkit-background-size: 40px 31px;
+	background-size: 40px 31px;
+	position: absolute;
+	top: 0px;
+	right: 0px;
+}

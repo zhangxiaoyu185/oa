@@ -1,0 +1,77 @@
+<!-- 拨款 -->
+<%
+for(var i=0; i<list.length; i++){
+
+	var crflwStepName = ""; 
+	switch(list[i].crflwStep){
+		case 1: crflwStepName="渠道发起"; break;
+		case 2: crflwStepName="策划发起"; break;
+		case 3: crflwStepName="策划审核"; break;
+		case 4: crflwStepName="营销总审核"; break;
+		case 5: crflwStepName="项目总审核"; break;
+		case 6: crflwStepName="财务审核"; break;
+		case 7: crflwStepName="已完成"; break;
+
+		case 11: crflwStepName="拨款发起"; break;
+		case 12: crflwStepName="拨款审核"; break;
+		case 13: crflwStepName="已拨款"; break;
+		case 14: crflwStepName="已还款"; break;
+	}
+
+	if(list[i].crflwType!="APPLY"){
+%>
+
+<li>
+	<div class="pendingTrial_top">
+		<div class="pendingTrial_flag">拨款流程</div>
+	</div>
+	<div class="pendingTrial_big_border">
+		<div class="pendingTrial_title">
+			<%=list[i].crflwName%>
+			<%if(isInvestor){%>
+				<div class="investorProcessList_delete ui_btn" data-code="<%=list[i].crflwCode%>" data-action="deleteInvestor"></div>
+			<%}%>
+		</div>
+
+		<div class="pendingTrial_desc">
+			<span style="color:#a4a4a4">所属项目：</span><span style="color:#333"><%=list[i].crflwProjectName%></span><br/>
+			<span style="color:#a4a4a4">当前环节：</span><span style="color:#333"><%=crflwStepName%></span><br/>
+			<%if(list[i].crflwLoanMoney){%>
+			<span style="color:#a4a4a4">拨款金额：</span><span  style="color:#111">￥<%=list[i].crflwLoanMoney%>元</span><br/>
+			<%}%>
+			<span style="color:#a4a4a4">更新时间：</span><span style="color:#a4a4a4"><%=list[i].crflwUdate%></span>
+		</div>
+		<div class="pendingTrial_toDesc ui_btn" data-code="<%=list[i].crflwCode%>" data-action="toPendingTrialDesc">
+			查看详情
+			<div class="comm_next" style="height: 35px;line-height: 35px; color: #f38701;">></div>
+		</div>
+	</div>
+</li>
+<%}else{%>
+<!-- 申请 -->
+<li>
+	<div class="pendingTrial_top apply">
+		<div class="pendingTrial_flag apply">申请资金流程</div>
+	</div>
+	<div class="pendingTrial_big_border">
+		<div class="pendingTrial_title">
+			<%=list[i].crflwName%>
+			<%if(isInvestor){%>
+				<div class="investorProcessList_delete"></div>
+			<%}%>
+		</div>
+		<div class="pendingTrial_desc">
+			<span style="color:#a4a4a4">所属项目：</span><span style="color:#333"><%=list[i].crflwProjectName%></span><br/>
+			<span style="color:#a4a4a4">当前环节：</span><span style="color:#333"><%=crflwStepName%></span><br/>
+			<%if(list[i].crflwLoanMoney){%>
+			<span style="color:#a4a4a4">拨款金额：</span><span  style="color:#111">￥<%=list[i].crflwLoanMoney%>元</span><br/>
+			<%}%>
+			<span style="color:#a4a4a4">更新时间：</span><span style="color:#a4a4a4"><%=list[i].crflwUdate%></span>
+		</div>
+		<div class="pendingTrial_toDesc apply ui_btn" data-code="<%=list[i].crflwCode%>" data-action="toPendingTrialDesc">
+			查看详情
+			<div class="comm_next" style="height: 35px;line-height: 35px; color: #9385fb;">></div>
+		</div>
+	</div>
+</li>
+<%}}%>
